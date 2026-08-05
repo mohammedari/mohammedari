@@ -48,12 +48,20 @@ jobs:
           path: profile/pin-cncjs-pendant-python-bridge.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate Netflix dual subtitles card
+      - name: Generate TensorFlow Object Detector card
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=mohammedari&repo=netflix-dual-subtitles
-          path: profile/pin-netflix-dual-subtitles.svg
+          options: username=mohammedari&repo=tensorflow_object_detector_ros
+          path: profile/pin-tensorflow_object_detector_ros.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Generate OpenGL ROS card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=mohammedari&repo=opengl_ros
+          path: profile/pin-opengl_ros.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit generated cards
