@@ -12,14 +12,17 @@ Software researcher and engineer working on XR, computer graphics, robotics, emb
 ## Featured Projects
 
 <p>
+  <a href="https://github.com/mohammedari/opengl_ros">
+    <img src="./profile/pin-opengl_ros.svg" />
+  </a>
+  <a href="https://github.com/mohammedari/tensorflow_object_detector_ros">
+    <img src="./profile/pin-tensorflow_object_detector_ros.svg" />
+  </a>
   <a href="https://github.com/mohammedari/thumbsplit58-hardware">
-    <img src="./profile/pin-thumbsplit58-hardware.svg" alt="Thumbsplit58 Hardware" />
+    <img src="./profile/pin-thumbsplit58-hardware.svg" />
   </a>
   <a href="https://github.com/mohammedari/cncjs-pendant-python-bridge">
-    <img src="./profile/pin-cncjs-pendant-python-bridge.svg" alt="CNCjs Pendant Python Bridge" />
-  </a>
-  <a href="https://github.com/mohammedari/netflix-dual-subtitles">
-    <img src="./profile/pin-netflix-dual-subtitles.svg" alt="Netflix Dual Subtitles" />
+    <img src="./profile/pin-cncjs-pendant-python-bridge.svg" />
   </a>
 </p>
 
