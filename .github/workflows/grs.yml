@@ -13,7 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@v4
 
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2
@@ -27,16 +28,32 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate pinned repository card
+      - name: Generate Thumbsplit58 card
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=stats-organization&repo=github-readme-stats
-          path: profile/pin-stats-organization-github-readme-stats.svg
+          options: username=mohammedari&repo=thumbsplit58-hardware
+          path: profile/pin-thumbsplit58-hardware.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate CNCjs pendant bridge card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=mohammedari&repo=cncjs-pendant-python-bridge
+          path: profile/pin-cncjs-pendant-python-bridge.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Netflix dual subtitles card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=mohammedari&repo=netflix-dual-subtitles
+          path: profile/pin-netflix-dual-subtitles.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit generated cards
